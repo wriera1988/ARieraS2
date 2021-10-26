@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ARieraS2.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+            <Label Text="TAREA SEMANA 3 LOGIN" HorizontalTextAlignment="Center" TextColor="White" FontSize="18"/>
+        </Frame>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="ingrese un valor" Grid.Row="0" Grid.Column="0" />
+                <Entry x:Name="txtValorUno" Keyboard="Numeric" Grid.Row="0" Grid.Column="1"/>
+
+            <Label Text="ingrese otro valor" Grid.Row="1" Grid.Column="0"/>
+            <Entry x:Name="txtValorDos" Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+
+            <Label Text="El resultado es" Grid.Row="2" Grid.Column="0" />
+            <Entry x:Name="txtResultado" IsReadOnly="True" Grid.Row="2" Grid.Column="1"/>                
+
+        </Grid>
+        
+         <Entry x:Name="txtUsuario" Placeholder="Ingrese su usuario"/>
+        <Entry x:Name="txtClave" Placeholder="ingrese la clave" IsPassword="True"/>
+        
+
+        <Button x:Name="btnSumar" Text="Sumar" Clicked="BtnSumar_Clicked"/>
+            <Button x:Name="btnAbrir" Text="Abrir Formulario2" Clicked="BtnAbrir_Clicked"/>
+
+    </StackLayout>
+    
+</ContentPage>
